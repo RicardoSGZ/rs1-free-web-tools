@@ -5,10 +5,21 @@
 - An AMI for each architecture (x86_64 and arm)
 - S3 buckets for website, storage tool and compress tool
 - A Cloudfront distribution for each bucket
-- "Request" and "Zip" Node.js packages uploaded as Lambda layers
+- "Request" (Node.js) and "Zip" (Linux) packages uploaded as Lambda layers
 
 ### Serverless Framework
 
 ### WeTTY
 - Take a look at "wetty" folder
 
+
+## FAQ
+### How to upload Request and Zip packages as Lambda layers
+- Download them from lambda-layers folder
+- For each of the packages, do this:
+- Go to your AWS account (console.aws.amazon.com) > Lambda > Layers > Create layer.
+- Type a name and description
+- Check "Upload from a .zip file" and upload the file
+- Select Node.js 12.x as Compatible runtime
+- Click create and copy the arn (it's like: arn:aws:lambda:REGION:ACCOUNT-ID:layer:LAYER-NAME:LAYER-VERSION).
+- Paste arn in serverless.yml files
