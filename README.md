@@ -23,3 +23,15 @@
 - Select Node.js 12.x as Compatible runtime
 - Click create and copy the arn (it's like: arn:aws:lambda:REGION:ACCOUNT-ID:layer:LAYER-NAME:LAYER-VERSION).
 - Paste arn in serverless.yml files
+
+### How to setup Telegram Bot
+- Create a private chat with @BotFather and create a bot
+- Save the token
+- Ensure you had created the telegram-bot function and had the API URL for that function
+- Type this "curl" command (or use any program that can do HTTP requests)
+
+
+```
+curl --request POST --url https://api.telegram.org/[[YOUR-TELEGRAM-BOT-TOKEN]]/setWebhook --header 'content-type: application/json' --data '{"url": "https://[[YOUR-API-URL]]/telegram-bot"}'
+```
+
