@@ -14,7 +14,7 @@
 
 ### Serverless Framework
 
-### WeTTY
+### WeTTY (Web Terminal)
 - Take a look at "wetty" folder
 
 
