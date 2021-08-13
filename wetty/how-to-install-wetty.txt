@@ -1,5 +1,6 @@
-#Instructions valid for Ubuntu 20.04
+#Instructions valid for an Ubuntu 20.04 AMI
 #Download and installation of Node.js 14 and other packages
+sudo apt update
 sudo apt-get install -y curl git apt-utils make g++
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo bash -
 sudo apt-get install -y nodejs
@@ -40,6 +41,9 @@ sudo usermod -aG sudo webvps
 #To avoid your IP could be visible:
 #open /etc/ssh/sshd_config (with sudo) and edit:
 PrintLastLog no
+
+#in same file, for allowing root login over SSH:
+PermitRootLogin yes
 
 #Then restart ssh service
 sudo service ssh restart

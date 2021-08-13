@@ -2,7 +2,8 @@
 ## Tools needed:
 ### AWS (EC2, S3, Lambda, Cloudfront)
 - A VPC and subnet
-- An AMI for each architecture (x86_64 and arm)
+- A key pair
+- An AMI for each architecture (x86_64 and arm). Follow the steps in wetty/how-to-install-wetty.txt with an EC2 instance and then create an image of it (Actions > Image and templates > Create an image)
 - S3 buckets for website, storage tool and compress tool
 - A Cloudfront distribution for each bucket
 - "Request" (Node.js) and "Zip" (Linux) packages uploaded as Lambda layers
