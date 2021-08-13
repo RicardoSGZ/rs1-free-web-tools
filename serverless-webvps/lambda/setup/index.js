@@ -14,8 +14,8 @@ let makeResponse = (statusCode, body) => {
 
 const SERVERDATA = {
   region: 'eu-west-1',
-  key: 'general_eur_key',
-  vpc: 'vpc-0d115c24c52cfb5cf',
+  key: 'XXXX', //YOUR SSH KEYNAME
+  vpc: 'XXXX', //YOUR VPC ID
   subnet: 'XXXX', //YOUR SUBNET ID
   securitygroup: 'XXXX', //YOUR SECURITY GROUP ID
   amix86: 'XXXX', //AMI FOR X86_64
