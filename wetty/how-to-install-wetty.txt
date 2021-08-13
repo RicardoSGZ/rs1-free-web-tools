@@ -1,0 +1,54 @@
+#Instructions valid for Ubuntu 20.04
+#Download and installation of Node.js 14 and other packages
+sudo apt-get install -y curl git apt-utils make g++
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo bash -
+sudo apt-get install -y nodejs
+
+#To compile WeTTY
+sudo npm install -g yarn
+git clone https://github.com/butlerx/wetty.git
+
+#Open with a text editor wetty/src/assets/scss/options.scss and add "display: none" to "#options" to remove a not so useful options menu
+
+cd wetty
+yarn
+yarn build
+
+#Service creation, edit the wetty.service file before
+sudo cp wetty.service /lib/systemd/system/wetty.service
+sudo systemctl daemon-reload
+sudo systemctl start wetty.service
+sudo systemctl enable wetty.service
+
+#Add a user and make it "sudo" capable
+sudo adduser webvps
+sudo usermod -aG sudo webvps
+
+#Install docker and add the user to "docker" group
+#Check this to install docker: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+#cd to /etc/update-motd.d/ to change MOTD
+#Add a new file "01-header-custom" (with sudo):
+	#!/bin/bash
+
+	printf "Welcome to the Web VPS!\n"
+	printf "Last updated: 2021-07-08\n"
+	
+#Make this file executable (chmod +x 01-header-custom) and then remove execution permission of 00-header (chmod -x 00-header)
+#remove execution permission of 10-help-text, 90-updates-available, 91-release-upgrade, 92-unatended-upgrades
+
+#To avoid your IP could be visible:
+#open /etc/ssh/sshd_config (with sudo) and edit:
+PrintLastLog no
+
+#Then restart ssh service
+sudo service ssh restart
+
+#Open /etc/pam.d/login (with sudo), and edit (comment this line):
+#session    optional   pam_lastlog.so
+
+#To ensure there are no visible IPs:
+sudo truncate -s 0 /var/log/lastlog
+
+#You can change root password to the same as your new user
+
