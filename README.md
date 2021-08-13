@@ -32,6 +32,6 @@
 
 
 ```
-curl --request POST --url https://api.telegram.org/[[YOUR-TELEGRAM-BOT-TOKEN]]/setWebhook --header 'content-type: application/json' --data '{"url": "https://[[YOUR-API-URL]]/telegram-bot"}'
+curl --request POST --url https://api.telegram.org/bot[[YOUR-TELEGRAM-BOT-TOKEN]]/setWebhook --header 'content-type: application/json' --data '{"url": "https://[[YOUR-API-URL]]/telegram-bot"}'
 ```
 
