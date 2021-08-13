@@ -9,7 +9,7 @@ provider:
   stage: prod
   region: eu-west-1
   tags:
-    proyecto: ${self:service}
+    project: ${self:service}
   httpApi:
     useProviderTags: true
   iam:
