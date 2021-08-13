@@ -4,6 +4,7 @@
 - A VPC and subnet
 - An AMI for each architecture (x86_64 and arm)
 - S3 buckets for website, storage tool and compress tool
+- A Cloudfront distribution for each bucket
 - "Request" and "Zip" Node.js packages uploaded as Lambda layers
 
 ### Serverless Framework
