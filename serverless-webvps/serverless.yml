@@ -1,0 +1,110 @@
+service: web-vps
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: prod
+  region: eu-west-1
+  tags:
+    project: web-vps
+  httpApi:
+    useProviderTags: true
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - 'ec2:*'
+          Resource: '*'
+        - Effect: Allow
+          Action:
+            - 'ecs:*'
+          Resource: '*'
+        - Effect: Allow
+          Action:
+            - 'cloudwatch:PutMetricAlarm'
+            - 'cloudwatch:DescribeAlarms'
+            - 'cloudwatch:DeleteAlarms'
+          Resource: '*'
+
+
+functions:
+  setup:
+    handler: lambda/setup/index.handler
+    memorySize: 128
+    timeout: 15
+    layers:
+      - [[ARN FOR "REQUEST" NODEJS PACKAGE]]
+    events:
+      - httpApi:
+          path: /setup-webvps
+          method: post
+  getip:
+    handler: lambda/getip/index.handler
+    memorySize: 128
+    timeout: 25
+    events:
+      - httpApi:
+          path: /getip-webvps
+          method: post
+  delservers:
+    handler: lambda/delservers/index.handler
+    memorySize: 128
+    timeout: 10
+  setalarm:
+    handler: lambda/setalarm/index.handler
+    memorySize: 192
+    timeout: 10
+  delalarms:
+    handler: lambda/delalarms/index.handler
+    memorySize: 160
+    timeout: 30
+  setuptask-ecs:
+    handler: lambda/setuptask-ecs/index.handler
+    memorySize: 128
+    timeout: 10
+    events:
+      - httpApi:
+          path: /setuptask-ecs
+          method: post
+  getip-ecs:
+    handler: lambda/getip-ecs/index.handler
+    memorySize: 128
+    timeout: 300
+  stopalltasks-ecs:
+    handler: lambda/stopalltasks-ecs/index.handler
+    memorySize: 160
+    timeout: 25
+    events:
+      - httpApi:
+          path: /stopalltasks-ecs
+          method: post
+  runningvps:
+    handler: lambda/runningvps/index.handler
+    memorySize: 128
+    timeout: 10
+    events:
+      - httpApi:
+          path: /runningvps
+          method: get
+  showalarms:
+    handler: lambda/showalarms/index.handler
+    memorySize: 128
+    timeout: 10
+    events:
+      - httpApi:
+          path: /showalarms
+          method: get
+  telegram-bot:
+    handler: lambda/telegram-bot/index.handler
+    memorySize: 160
+    timeout: 10
+    layers:
+      - [[ARN FOR "REQUEST" NODEJS PACKAGE]]
+    events:
+      - httpApi:
+          path: /telegram-bot
+          method: post

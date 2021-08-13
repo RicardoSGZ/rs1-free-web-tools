@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our Frequently Asked Questions">
+    <title>FAQ. RS1 Free Web Tools - rs1.es</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/main.min.css?v=20210708_1850">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="logo-header">
+                <img src="res/imgs/logo-header.png" alt="web logo" width="128" height="128">
+            </div>
+            <div class="title-header">
+                <h1><a href="/">Free Web Tools</a></h1>
+            </div>
+            <nav class="navbar">
+                <a href="faq.html">FAQ</a>
+                <a href="termsofservice.html">ToS</a>
+            </nav>
+        </header>
+        <main id="questions">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="question-list">
+                <p>General</p>
+                <ul>
+                    <li><a href="#free-service">You offer several free tools, what's the trick?</a></li>
+                </ul>
+                <p>Privacy</p>
+                <ul>
+                    <li><a href="#collect-personal-data">What kind of personal data do you collect and why?</a></li>
+                    <li><a href="#provider-privacy">Okay, I trust you, but you don't manage the underlying infrastructure, so can I trust in your provider?</a></li>
+                </ul>
+                <p>Web VPS</p>
+                <ul>
+                    <li><a href="#webvps-time">For how long I will be able to use this tool?</a></li>
+                    <li><a href="#webvps-access-error">When I click the "Access to the server" button, it shows an error</a></li>
+                    <li><a href="#webvps-upload">How can I upload a file to the tool?</a></li>
+                    <li><a href="#webvps-download">How can I download a file from the tool?</a></li>
+                    <li><a href="#webvps-reboot">If I reboot the VPS, will I be able to connect to it after that?</a></li>
+                    <li><a href="#webvps-ports">Network Ports</a></li>
+                    <li><a href="#webvps-special-keys">How can I use Ctrl, Alt, F-keys, etc. on my phone/tablet?</a></li>
+                    <li><a href="#webvps-copy-paste">Copy / Paste</a></li>
+                    <li><a href="#webvps-putty">(Windows) How to connect to an SSH VPS with PuTTY?</a></li>
+                    <li><a href="#webvps-mobaxterm">(Windows) How to connect to an SSH VPS with MobaXTerm?</a></li>
+                    <li><a href="#webvps-terminal">(Linux) How to connect to an SSH VPS with a Terminal?</a></li>
+                    <li><a href="#webvps-more">More tutorials and news</a></li>
+                </ul>
+                <p>"Serverless" Command Line Tool</p>
+                <ul>
+                    <li><a href="#serverless-meaning">What is "Serverless" Command Line Tool?</a></li>
+                    <li><a href="#serverless-available-commands">Which commands can I use?</a></li>
+                    <li><a href="#serverless-uploaded-files">For how long will uploaded files remain on the system?</a></li>
+                    <li><a href="#serverless-commands-no-result">I've executed a command and I haven't seen any result</a></li>
+                    <li><a href="#serverless-wget">I can't use "wget" to download a file</a></li>
+                </ul>
+
+                <p>More VPS tutorials</p>
+                <ul>
+                    <li><a href="#more-putty">(Windows) How to connect to an SSH VPS with PuTTY (with private key)?</a>
+                    </li>
+                    <li><a href="#connect-remmina">(Linux) How to connect to an RDP VPS with Remmina?</a></li>
+                    <li><a href="#connect-remote-desktop">(Windows) How to connect to an RDP VPS with Remote Desktop?</a></li>
+                    <li><a href="#transfer-filezilla">How to transfer files between my computer and VPS with Filezilla?</a></li>
+                    <li><a href="#more-mobaxterm">(Windows) How to connect to an SSH VPS with MobaXTerm (with private key)?</a></li>
+                    <li><a href="#more-terminal">Linux) How to connect to an SSH VPS with a Terminal (with private key)?</a></li>
+                    <li><a href="#mount-remote-sshfs">(Linux) How to mount a remote filesystem with sshfs?</a></li>
+                    <li><a href="#install-jitsi">How to install Jitsi (Free Video Conferencing Service)?</a></li>
+                    <li><a href="#configure-rtmp">How to configure a RTMP server?</a></li>
+
+                </ul>
+
+            </div>
+            
+            
+            <div class="faq-main">
+                <div id="general">
+                    <p>General</p>
+                    <div class="question-block" id="free-service">
+                        <p>You offer several free tools, what's the trick?</p>
+                        <ul>
+                            <li>There's no "trick". This web is more a hobby project than a way to make money. The tools I offer are limited (see sections below) and I adjust these limits so that the expenses involved in this project do not exceed my budget.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="privacy">
+                    <p>Privacy</p>
+                    <div class="question-block" id="collect-personal-data">
+                        <p>What kind of personal data do you collect and why?</p>
+                        <ul>
+                           <li>Check our <a href="privacy-policy.html">Privacy Policy</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="provider-privacy">
+                        <p>Okay, I trust you, but you don't manage the underlying infrastructure, so can I trust in your provider?</p>
+                        <ul>
+                            <li>My provider, Amazon Web Services (AWS) is the biggest cloud company in the world and it takes security very seriously. You can read its Data Privacy FAQ in this <a href="https://aws.amazon.com/compliance/data-privacy-faq/">link</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="webvps">
+                    <p>Web VPS</p>
+                    <div class="question-block" id="webvps-time">
+                        <p>For how long I will be able to use this tool?</p>
+                        <ul>
+                            <li>Maximum usage time for every VPS is 3 hours.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-access-error">
+                        <p>When I click the "Access to the server" button, it shows an error</p>
+                        <ul>
+                            <li>Maybe the tool isn't configured yet, try uploading the page.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-upload">
+                        <p>How can I upload a file to the tool?</p>
+                        <ul>
+                            <li>The simplest way is uploading to any cloud storage service (like mine) and then using "wget" command:
+                                <pre>wget https://f.rs1.es/1234/file.pdf</pre>
+                            </li>
+                            <li>You can use an SFTP client with these parameters:</li>
+                            <code>Server: SERVER-IP / Username: webvps / Password: webpwd / Port: 22</code>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-download">
+                        <p>How can I download a file from the tool?</p>
+                        <ul>
+                            <li>There are several ways. First option is the preferred one:</li>
+                            <li><b>Web server</b></li>
+                            <ol>
+                                <li>Set up a simple webserver with this command:
+                                    <pre>sudo python3 -m http.server 80</pre>
+                                </li>
+                                <li>In another browser window (or tab), type "http://[SERVER-PUBLIC-IP]". You will be able to download any file inside the folder in which you executed the python command.</li>
+                                
+                            </ol>
+                            <li><b>SFTP (Filezilla)</b></li>
+                            <ul>
+                                <li>Server: SERVER-IP / Username: webvps / Password: webpwd / Port: 22</li>
+                            </ul>
+                            <li><b>SSHFS</b></li>
+                            <ul>
+                                <li>
+                                    <pre>
+sshfs webvps@SERVER-IP:/home/webvps/ /your-local-folder/
+#for unmount
+umount /your-local-folder/</pre>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-reboot">
+                        <p>If I reboot the VPS, will I be able to connect to it after that?</p>
+                        <ul>
+                            <li>Yes, you can perform a reboot and you can connect to the server after the start-up period.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-ports">
+                        <p>Network Ports</p>
+                        <ul>
+                            <li>For security reasons, open inbound and outbound ports are restricted to the following:</li>
+                            <li>Inbound ports: All TCP ports, ICMP.</li>
+                            <li>Outbound ports: 80 (TCP), 443 (TCP), ICMP (and all responses to inbound traffic).</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-special-keys">
+                        <p>How can I use Ctrl, Alt, F-keys, etc. on my phone/tablet?</p>
+                        <ul>
+                            <li>You can download "Hacker's Keyboard" in the Play Store (Android).</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-copy-paste">
+                        <p>Copy / Paste</p>
+                        <ul>
+                            <li>You can copy from tool just by selecting the text.</li>
+                            <li>You can paste to the tool with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> or with a right-click and select "Paste".</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="webvps-putty">
+                        <p>(Windows) How to connect to an SSH VPS with PuTTY?</p>
+                        <ol>
+                            <li>Open PuTTY.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-4.jpg" alt="Screenshot PuTTY main window">
+                                </div>
+                            </li>
+
+                            <li>Type the public IP or the public DNS on the "Host Name" input box.</li>
+
+                            <li>Click on "Connection &gt; Data" and type the username on "Auto-login username".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-6.jpg" alt="Screenshot PuTTY auth window">
+                                </div>
+                            </li>
+
+                            <li>Go back to "Session" on the left menu and type a name for the connection inside "Saved sessions" input box.</li>
+                            <li>Click "Save".</li>
+                            <li>Click "Open".</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="webvps-mobaxterm">
+                        <p>(Windows) How to connect to an SSH VPS with MobaXTerm?</p>
+                        <ol>
+                            <li>Click "Session" icon at the top-left.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-mobaxterm-1.jpg" alt="Screenshot MobaXterm main window">
+                                </div>
+                            </li>
+
+                            <li>Click "SSH".</li>
+                            <li>Type the public IP or the public DNS on "Remote Host".</li>
+                            <li>Click on "Specify username" and type the username.</li>
+                            <li>Click on "Bookmark settings" and type a Session Name.</li>
+                            <li>Click "OK".</li>
+                            <li>Double-click on the session name (on the left menu) to connect.</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="webvps-terminal">
+                        <p>(Linux) How to connect to an SSH VPS with a Terminal?</p>
+                        <ol>
+                            <li>You probably have an SSH client installed on your system. Check it by typing
+                                <code>ssh</code> in the Terminal. If it's not installed, you can install "openssh-client".
+                            </li>
+                            <li>Type this command:
+                                <code>ssh [username]@[public IP or public DNS]</code>
+                                <pre>ssh cltool@123.456.789</pre>
+                            </li>
+                            <li>If the terminal shows this question: "Are you sure you want to continue connecting (yes/no/[fingerprint])?, type "yes" to save the fingerprint of the key.</li>
+                            <li>It will ask you the password.</li>
+                        </ol>
+                    </div>
+
+                    <div class="question-block" id="webvps-more">
+                        <p>More tutorials and news</p>
+                        <ul>
+                            <li>In our subreddit <a href="https://www.reddit.com/r/RS1FreeWebTools/">r/RS1FreeWebTools</a> we post useful tips and tutorials for all web tools, and every new feature we add.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="serverless">
+                    <p>"Serverless" Command Line Tool</p>
+                    <div class="question-block" id="serverless-meaning">
+                        <p>What is "Serverless" Command Line Tool?</p>
+                        <ul>
+                            <li>In this case, "Serverless" means you can't access the VPS directly, but with an API that sends your command, processes it, and receives the output.</li>
+                            <li>This system allows to improve server specs (6 vCPU, 10GB RAM) because server only runs when you send a command, but it's more restricted than a regular VPS.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="serverless-available-commands">
+                        <p>Which commands can I use?</p>
+                        <ul>
+                            <li>You can use a lot of programs, like GhostScript (gs), Python (python3.8), GraphicsMagick (gm), Java (java, javac), Libreoffice (libreoffice) and many of the basic commands like tar, zip, man, etc.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="serverless-uploaded-files">
+                        <p>For how long will uploaded files remain on the system?</p>
+                        <ul>
+                            <li>Files uploaded will remain for 2-3 hours unless you delete them before.</li>
+                            <li>Files downloaded will be publicly available for 1 day.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="serverless-commands-no-result">
+                        <p>I've executed a command and I haven't seen any result</p>
+                        <ul>
+                            <li>This web-based CLI has some limits:</li>
+                            <li>Every command needs to finish by itself (in other words, it cannot show any prompt). Try using "-y" in your command to automatically answer yes to prompts.</li>
+                            <li>Command execution can't last more than 60 seconds.</li>
+                        </ul>
+                    </div>
+                    <div class="question-block" id="serverless-wget">
+                        <p>I can't use "wget" to download a file</p>
+                        <ul>
+                            <li>Due to network restrictions, "wget" is not installed, but there is a similar custom tool called "get" you can use to download a file to the Serverless VPS.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="vps">
+                    <p>More VPS tutorials</p>
+                    <div class="question-block" id="more-putty">
+                        <p>(Windows) How to connect to an SSH VPS with PuTTY (with private key)?</p>
+                        <ol>
+                            <li>Download the Private Key.</li>
+                            <li>You need to change the Private Key format to PPK. To do so, open PuTTYgen. It was installed with PuTTY.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-1.jpg" alt="Screenshot PuTTYgen location">
+                                </div>
+                            </li>
+
+                            <li>Click on "Load".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-2.jpg" alt="Screenshot PuTTYgen main window">
+                                </div>
+                            </li>
+
+                            <li>Click on "PuTTY Private Key Files" at the bottom-right corner and select "All Files (*)"
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-3.jpg" alt="Screenshot PuTTYgen load window">
+                                </div>
+                            </li>
+
+                            <li>Select the Private Key and click OK.</li>
+                            <li>Click on "Save private key". You can set up a password for the key if you want.</li>
+                            <li>Open PuTTY.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-4.jpg" alt="Screenshot PuTTY main window">
+                                </div>
+                            </li>
+
+                            <li>Type the public IP or the public DNS on the "Host Name" input box.</li>
+                            <li>On the left menu, click on "Connection &gt; SSH &gt; Auth"</li>
+                            <li>Select your PPK file by clicking on "Browse".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-5.jpg" alt="Screenshot PuTTY private key window">
+                                </div>
+                            </li>
+
+                            <li>Click on "Connection &gt; Data" and type the username on "Auto-login username".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-putty-6.jpg" alt="Screenshot PuTTY auth window">
+                                </div>
+                            </li>
+
+                            <li>Go back to "Session" on the left menu and type a name for the connection inside "Saved sessions" input box.</li>
+                            <li>Click "Save".</li>
+                            <li>Click "Open".</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="connect-remote-desktop">
+                        <p>(Windows) How to connect to an RDP VPS with Remote Desktop?</p>
+                        <ol>
+                            <li>Type the public DNS on "Computer" input box.</li>
+                            <li>Click on "Show options" and type the username.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-remote-desktop-1.jpg" alt="Screenshot Remote Desktop">
+                                </div>
+                            </li>
+
+                            <li>Click "Connect".</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="transfer-filezilla">
+                        <p>How to transfer files between my computer and VPS with Filezilla?</p>
+                        <ol>
+                            <li>Download Private Key.</li>
+                            <li>In Filezilla, click on the top-left icon ("Site Manager").
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-filezilla-1.jpg" alt="Screenshot Filezilla main window">
+                                </div>
+                            </li>
+
+                            <li>Click on "New site" and type a name for the connection.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-filezilla-2.jpg" alt="Screenshot Filezilla">
+                                </div>
+                            </li>
+
+                            <li>In "Protocol" select "SFTP".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-filezilla-3.jpg" alt="Screenshot Filezilla">
+                                </div>
+                            </li>
+
+                            <li>Type the public IP or the public DNS on "Host".</li>
+                            <li>In "Logon Type", select "Key File".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-filezilla-4.jpg" alt="Screenshot Filezilla">
+                                </div>
+                            </li>
+
+                            <li>Type the username.</li>
+                            <li>Click "Browse" to select the private key file. In the pop-up window, select "PEM files" at the bottom-right corner and select the private key.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-filezilla-5.jpg" alt="Screenshot Filezilla">
+                                </div>
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-filezilla-6.jpg" alt="Screenshot Filezilla">
+                                </div>
+                            </li>
+
+
+                            <li>Finally, click "Connect".</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="webvps-mobaxterm">
+                        <p>(Windows) How to connect to an SSH VPS with MobaXTerm (with private key)?</p>
+                        <ol>
+                            <li>Download the Private Key.</li>
+                            <li>Click "Session" icon at the top-left.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-mobaxterm-1.jpg" alt="Screenshot MobaXterm main window">
+                                </div>
+                            </li>
+
+                            <li>Click "SSH".</li>
+                            <li>Type the public IP or the public DNS on "Remote Host".</li>
+                            <li>Click on "Specify username" and type the username.</li>
+                            <li>Click on "Advanced SSH settings".</li>
+                            <li>Click on "Use private key" and click on the file icon inside the input box.
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-mobaxterm-2.jpg" alt="Screenshot MobaXterm SSH window">
+                                </div>
+                            </li>
+
+                            <li>Select the Private Key</li>
+                            <li>Click on "Bookmark settings" and type a Session Name.</li>
+                            <li>Click "OK".</li>
+                            <li>Double-click on the session name (on the left menu) to connect.</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="webvps-terminal">
+                        <p>(Linux) How to connect to an SSH VPS with a Terminal (with private key)?</p>
+                        <ol>
+                            <li>Download the Private Key.</li>
+                            <li>You probably have an SSH client installed on your system. Check it by typing
+                                <code>ssh</code> in the Terminal. If it's not installed, you can install "openssh-client".
+                            </li>
+                            <li>The first time, you need to change the Private Key file permissions: type
+                                <code>chmod 600 [private key file]</code>
+                            </li>
+                            <li>Type this command:
+                                <code>ssh -i [private key file]
+                                        [username]@[public IP or public DNS]</code>
+                                <pre>ssh -i ./frewebtools_eur_key.pem ubuntu@123.456.789</pre>
+                            </li>
+                            <li>If the terminal shows this question: "Are you sure you want to continue connecting (yes/no/[fingerprint])?, type "yes" to save the fingerprint of the key.</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="connect-remmina">
+                        <p>(Linux) How to connect to an RDP VPS with Remmina?</p>
+                        <ol>
+                            <li>In Remmina, click on the top-left icon: "New connection profile".
+                                <div class="faq-imgs">
+                                    <img src="res/imgs/faq/faq-remmina-1.jpg" alt="Screenshot Remmina main window">
+                                </div>
+                            </li>
+
+                            <li>Select the RDP Protocol.</li>
+                            <li>Type a Name for the connection.</li>
+                            <li>Type the public IP or public DNS on "Server" field and the username and password in their respective fields.</li>
+                            <li>You can choose the window resolution (client resolution, custom, etc.).</li>
+                            <li>Click on "Save and connect".</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="mount-remote-sshfs">
+                        <p>(Linux) How to mount a remote filesystem with sshfs?</p>
+                        <ol>
+                            <li>Download the Private Key.</li>
+                            <li>SSHFS is a program that is usually installed with ssh.</li>
+                            <li>You need to set a mount point by creating a folder. You can name it whatever you want.
+                                <pre>mkdir remotefolder</pre>
+                            </li>
+
+                            <li>Type this command:
+                                <pre>sshfs [username]@[ip]:[remote path] [mount point] -o IdentityFile=[private key file path (full path)]</pre> For example:
+                                <pre>sshfs ubuntu@123.456.789:/home/ubuntu mounts/sshfs/ -o IdentityFile=/home/user/Documents/frewebtools_eur_key.pem</pre>
+                            </li>
+                            <li>To unmount:
+                                <pre>umount [mount point]</pre>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="install-jitsi">
+                        <p>How to install Jitsi (Free Video Conferencing Service)?</p>
+                        <ol>
+                            <li>I recommend using a 2GB RAM VPS, but my 1GB VPS can handle 3-4 users meetings.</li>
+                            <li>These ports need to be open:
+                                <ul>
+                                    <li>80 (TCP)</li>
+                                    <li>443 (TCP)</li>
+                                    <li>10000 (UDP)</li>
+                                </ul>
+                            </li>
+                            <li>You need a domain (for example:
+                                'example.com') and configure your domain DNS to the VPS public IP (meet.example.com A 85.526.56.589).</li>
+                            <li>Start an Ubuntu VPS.</li>
+                            <li>Login through SSH.</li>
+                            <li>Execute these commands:
+                                <pre>
+#Login as root and download Jitsi
+sudo su -
+echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list
+wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | apt-key add -
+apt update
+
+#Increase default limits, Jitsi need it for working
+echo 'DefaultLimitNOFILE=65000' >> /etc/systemd/system.conf
+echo 'DefaultLimitNPROC=65000' >> /etc/systemd/system.conf
+echo 'DefaultTasksMax=65000' >> /etc/systemd/system.conf
+systemctl daemon-reload
+
+#Install Jitsi
+apt -y install jitsi-meet
+
+#Installation will ask for the configured domain and if you want to generate certificates. Accept first option.
+
+#Install LetsEncrypt certificates
+/usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
+
+#Type an email
+</pre>
+                            </li>
+                            <li>Allowing authentication:
+                                <pre>
+#You can use your preferred editor (YOUR_DOMAIN is your configured URL, like meet.example.com):
+vim /etc/prosody/conf.avail/YOUR_DOMAIN.cfg.lua
+
+#Look for this line and modify it:
+VirtualHost "YOUR_DOMAIN" authentication = "internal_hashed"
+
+#Add:
+VirtualHost "guest.YOUR_DOMAIN" authentication = "anonymous" modules_enabled = { "turncredentials";
+    } c2s_require_encryption = false
+
+#Save changes and close your editor
+
+vim /etc/jitsi/meet/YOUR_DOMAIN-config.js
+
+#Look for this line and modify it:
+var config = { hosts: { domain: 'YOUR_DOMAIN', anonymousdomain: 'guest.YOUR_DOMAIN',
+        #More code...
+
+    },
+    #More code...
+}
+
+#Save changes and close editor
+
+echo 'org.jitsi.jicofo.auth.URL=XMPP:YOUR_DOMAIN' >> /etc/jitsi/jicofo/sip-communicator.properties
+
+#Add a user (replace USERNAME, YOUR_DOMAIN and PASSWORD with your info):
+prosodyctl register USERNAME YOUR_DOMAIN PASSWORD
+
+systemctl restart prosody
+systemctl restart jicofo
+systemctl restart jitsi-videobridge2
+</pre>
+                            </li>
+                            <li>Now, you can access YOUR_DOMAIN and put the USERNAME and PASSWORD.</li>
+                            <li>Type a meeting name (I recommend you type a long name).</li>
+                            <li>Users can access the meeting by typing YOUR_DOMAIN/MEETING_NAME.</li>
+                        </ol>
+                    </div>
+                    <div class="question-block" id="configure-rtmp">
+                        <p>How to configure a RTMP server?</p>
+                        <ol>
+                            <li>I recommend using a 2GB VPS.</li>
+                            <li>I will use an Amazon Linux 2 server.</li>
+                            <li>These ports need to be open:
+                                <ul>
+                                    <li>1935 (TCP)</li>
+                                    <li>8080 (TCP)</li>
+                                </ul>
+                            </li>
+                            <li>Execute these commands on the server:
+                                <pre>
+sudo amazon-linux-extras install -y docker
+sudo service docker start
+sudo docker run -d -p 1935:1935 -p 8080:8080 alqutami/rtmp-hls
+</pre>
+                            </li>
+                            <li>Now, you can send video to RTMP server with OBS Studio <ul>
+                                    <li>Settings &gt; Stream</li>
+                                    <li>Server: rtmp://SERVER_IP:1935/live</li>
+                                    <li>Stream Key: any text you choose.</li>
+                                </ul>
+                            </li>
+                            <li>Receiving video from server: <ul>
+                                    <li>With VLC:
+                                        <ol>
+                                            <li>File &gt; Open network location</li>
+                                            <li>You can choose RTMP or HLS protocol:</li>
+                                            <li>rtmp://SERVER_IP:1935/live/STREAM_KEY</li>
+                                            <li>http://SERVER_IP:8080/hls/STREAM_KEY.m3u8</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Webpage with statistics: http://SERVER_IP:8080/stats</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        </main>
+        <footer>
+            <div class="footer-block">
+                <div class="footer-intro">
+                    <div class="footer-intro-title">
+                        <img src="res/imgs/logo-header.png" alt="rs1 logo">
+                        <span>Free Web Tools</span>
+                    </div>
+                    <div class="footer-intro-description">
+                        <p>This website offers several free tools for developers and anyone that finds them useful: storage and image, video and PDF compressors.</p>
+                        <p>Check our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+                <div class="footer-feedback">
+                    <div class="footer-feedback-title">
+                        <span>Support & Feedback</span>
+                    </div>
+                    <div class="footer-feedback-desc">
+                        <p>If you have any troubles or suggestions, you can send an email to <a href="mailto:admin@rs1.es">admin@rs1.es</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <span>2020-2021 - Created by RS1.</span>
+            </div>
+        </footer>
+       
+    </div>
+
+</body>
+
+</html>

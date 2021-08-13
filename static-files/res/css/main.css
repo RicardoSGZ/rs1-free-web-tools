@@ -1,0 +1,784 @@
+* {
+    box-sizing: border-box;
+}
+
+body, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ins div {
+    overflow-x: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header, footer {
+    background-color: #5555FF;
+    color: white;
+}
+
+header {
+    padding: 0.3em;
+    display: grid;
+    grid-template-columns: 9% auto 33%;
+    align-items: center;
+}
+
+.logo-header {
+    display: grid;
+}
+
+.logo-header img {
+    max-width: 100%;
+    align-self: center;
+}
+
+.title-header {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding-left: 0.5em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0.3em;
+    font-size: 1.1em;
+}
+
+.navbar a {
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    /*border: 1px solid rgb(150,150,200);*/
+    background-color: white;
+    color: #5555FF;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #EEEEFF;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#terms, #questions {
+    padding: 0.5em;
+}
+
+main a {
+    display: block;
+}
+
+.notice {
+    background-color: rgb(255,75,75);
+    width: 90%;
+    color: white;
+    padding: 0.8em;
+    margin: 1em auto 0 auto;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.notice a {
+    display: inline;
+    text-decoration: underline;
+}
+
+.green {
+    background-color: rgb(75,200,75);
+}
+
+.intro {
+    padding: 0.8em;
+    text-align: center;
+}
+
+.intro p {
+    padding: 0.2em;
+}
+
+p.main {
+    font-size: 2em;
+}
+
+.sub {
+    font-size: 1.5em;
+    color: rgb(75,75,75);
+}
+
+.sub:nth-child(3) {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.social {
+    display: grid;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    grid-template-columns: repeat(5, auto);
+    padding: 0.5em 0;
+    gap: 0.7em;
+    justify-content: space-between;
+}
+
+.social-item {
+    max-width: 50px;
+}
+
+.social-item a {
+    display: grid;
+}
+
+.services-list {
+    display: grid;
+    padding-bottom: 0.7em;
+}
+
+.service-item {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
+
+.service-item:nth-child(odd) {
+    background-color: rgb(247,247,255);
+}
+
+.service-item .image-box {
+    width: 80%;
+    margin: auto;
+}
+
+.service-item p {
+    padding: 0.3em;
+    text-align: center;
+    color: rgb(0,25,200);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.service-item ul {
+    padding: 0.5em;
+    list-style-type: none;
+    width: 70%;
+    margin: auto;
+}
+
+.service-item li {
+    font-style: italic;
+    color: rgb(0,100,255);
+    font-size: 1em;
+    padding: 0.3em;
+}
+
+#secondsLeft {
+    font-size: 0.9em;
+}
+
+.description {
+    text-align: center;
+    align-self: center;
+}
+
+.start-btn {
+    background-color: rgb(25,25,255);
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4em;
+    margin: 0.5em auto;
+    width: max-content;
+    /* box-shadow: 3px 3px 10px rgb(150,150,150); */
+}
+
+.start-btn:hover {
+    background-color: rgb(0,0,200);
+}
+
+
+.webvps-list {
+    display: grid;
+}
+
+.webvps-list ul {
+    width: 100%;
+    margin: 0;
+}
+
+.webvps-list span {
+    color:rgb(0, 100, 255);
+    font-weight: bold;
+}
+
+.webvps-btns {
+    display: grid;
+}
+
+.webvps-options {
+    display: grid;
+    margin: auto;
+    padding: 0.2em;
+    width: 100%;
+    max-width: 300px;
+}
+
+.webvps-options-btn-box {
+    width: 100%;
+    display: grid;
+}
+
+#webvps-options-btn {
+    background-color: rgb(25,25,255);
+    font-size: 1em;
+    padding: 0.5em;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    margin: auto;
+}
+
+#webvps-options-btn-arrow {
+    color: white;
+    padding-left: 0.2em;
+}
+
+#webvps-options-btn:hover {
+    background-color: rgb(0,0,200);
+}
+
+.webvps-options-menu-box {
+    display: grid;
+    position: relative;
+}
+
+.disabled {
+    display: none;
+}
+
+.enabled {
+    display: grid;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.webvps-options-menu {
+    border: 1px solid rgb(0, 100, 255);
+    border-radius: 5px;
+    padding-bottom: 0.4em;
+    margin-top: 0.2em;
+    color: rgb(25, 25, 255);
+    background-color: white;
+    width: 100%;
+    position: absolute;
+}
+
+.webvps-options-item {
+    padding: 0.2em;
+}
+
+.webvps-options-item-title {
+    padding: 0.5em;
+}
+
+.webvps-options-item-title .options-sub {
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.webvps-options-script-textarea textarea{
+    width: 90%;
+    margin: auto;
+    resize: none;
+    border: 1px solid #999;
+}
+
+.webvps-options-blankdisk-checkbox label {
+    font-style: italic;
+}
+
+.webvps-options-blankdisk-checkbox label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.webvps-options-architecture-select {
+    display: grid;
+    gap: 0.2em;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+.arch-item {
+    border: 1px solid rgb(25, 25, 255);
+    padding: 0.2em;
+}
+
+.arch-item:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(25, 25, 255);
+}
+
+
+.selected span {
+    color: white;
+}
+
+#captchaBox {
+    display: grid;
+    justify-items: center;
+}
+
+.cltool {
+    color:white;
+    background-color: rgb(25, 25, 255);
+    margin: 0.5em auto;
+    border-radius: 5px;
+    padding: 0.2em 0.4em; 
+    font-size: 1.1em;
+}
+
+.cltool:hover {
+    background-color: rgb(0,0,200);
+}
+
+#delete-file-btn {
+    background-color: white;
+    color: rgb(25, 25, 255);
+    border: 1px solid rgb(25, 25, 255);
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
+}
+
+#delete-file-btn:hover {
+    background-color: rgb(240,240,255);
+}
+
+#upload-temp-box {
+    display: none;
+}
+
+
+
+.response-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.response-window {
+    background-color: white;
+    width: 85%;
+    padding: 0.8em;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.rw-header.one {
+    display: grid;
+}
+
+.rw-header.two {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr auto;
+}
+
+.rw-header-text {
+    padding: 0.2em;
+    color: rgb(0, 0, 255);
+    font-style: italic;
+    text-align: center;
+}
+
+.rw-header-text-main {
+    font-size: 1.2em;
+    padding-bottom: 0.2em;    
+}
+
+.rw-header-text-sub {
+    font-size: 0.9em;  
+    padding-bottom: 0.1em;
+}
+
+.rw-header-close {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.3em;
+    background-color: rgb(200,0,0);
+    color: white;
+    align-items: center;
+    justify-items: center;
+}
+
+.rw-header-close:hover {
+    cursor:pointer;
+    background-color: rgb(255,0,0);
+}
+
+.rw-main-list {
+    padding: 0.5em 0;
+}
+
+.rw-main-list a {
+    text-decoration: underline;
+}
+
+.rw-main-list li {
+    list-style-type: none;
+    color: rgb(0,0,255);
+    padding: 0.2em 0;
+}
+
+.rw-main-list li b {
+    word-wrap: break-word;
+}
+
+.rw-main-text {
+    color: rgb(0,0,255);
+    text-align: center;
+    padding: 0.2em 0;
+}
+
+.rw-main-text a {
+    font-size: 1.1em;
+    word-wrap: break-word;
+    text-decoration: underline;
+}
+
+.rw-main-text a:hover {
+    color: rgb(75,75,255);
+}
+
+
+.rw-main-btns {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    padding: 0.2em 0;
+}
+
+.rw-main-btns a {
+    color: white;
+    background-color: rgb(0, 100, 255);
+    padding: 0.5em;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(100,100,100);
+}
+
+@keyframes loadAnimation {
+    to {
+        left: 100%;
+    }
+}
+
+.rw-loadbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: -100%;
+    height: 5px;
+    background-color: rgb(0, 0, 255);
+    background: linear-gradient(to left, rgb(150,150,255), rgb(0,0,200));
+    animation-name: loadAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#code-text {
+    font-size: 1.1em;
+}
+
+#delete-file-form input {
+    width: 100%;
+    padding: 0.4em;
+    margin: 0.4em auto;
+}
+
+#confirm-delete-btn {
+    width: 100%;
+    padding: 0.4em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 0.4em auto;
+    background-color: rgb(200,0,0);
+    box-shadow: 2px 2px 5px rgb(100,100,100);
+}
+
+#confirm-delete-btn:hover {
+    background-color: rgb(255,0,0);
+}
+
+#file-link {
+    color: rgb(0,0,255);
+    word-wrap: break-word;
+}
+
+#file-link:hover {
+    color: rgb(100,100,255);
+}
+
+#copy-button {
+    background-color: rgb(0,0,200);
+}
+
+.info {
+    padding: 0.5em;
+}
+
+.info a {
+    color: blue;
+}
+
+#terms p, #privacy-policy p {
+    padding-bottom: 0.5em;
+}
+
+#terms ul, #privacy-policy ul {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+#donate ul {
+    word-break: break-all;
+}
+
+#questions {
+    overflow: hidden;
+}
+
+#questions a, #privacy-policy a {
+    display: inline;
+    color: rgb(50, 50, 255);
+}
+
+.question-list {
+    padding-bottom: 1em;
+}
+
+.question-list p {
+    padding: 0.5em 0;
+    font-size: 1.5em;
+}
+
+.question-list ul {
+    padding-left: 1em;
+}
+
+.question-list li {
+    padding: 0.4em 0;
+    font-size: 1.1em;
+}
+
+.faq-main {
+    padding: 0.5em 0;
+}
+
+.faq-main > div {
+    padding: 0.7em 0;
+}
+
+.faq-main > div > p {
+    font-size: 1.4em;
+}
+
+.faq-main .question-block {
+    padding: 0.5em 0;
+}
+
+.faq-main .question-block > p {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.faq-main ol {
+    padding-left: 1.5em;
+}
+
+.faq-main li {
+    padding: 0.4em 0;
+    color: rgb(30,30,30);
+}
+
+.faq-main pre {
+    width: 95%;
+    overflow-x: auto;
+    padding: 1.2em 0.5em;
+    background-color: rgb(240,240,240);
+}
+
+.faq-main kbd {
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #DDD;
+    color: black;
+    padding: 0.2em;
+    font-size: 1em;
+}
+
+.faq-imgs {
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    padding: 0.5em;
+    position: relative;
+    left: -0.7em;
+}
+
+#privacy-policy h3 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+footer {
+    padding: 0.4em;
+    font-size: 1em;
+}
+
+footer p {
+    padding: 0.2em 0;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+.footer-block {
+    display: grid;
+    width: 100%;
+    gap: 1em;
+    padding-bottom: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: auto;
+}
+
+.footer-intro-title, .footer-feedback-title {
+    font-size: 1.5em;
+    padding: 0.3em 0;
+}
+
+.footer-intro-title {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25px auto;
+    align-items: center;
+}
+
+.footer-intro-title span {
+    padding-left: 0.3em;
+}
+
+.footer-info {
+    text-align: center;
+    font-size: 0.9em;
+    color: #EEE;
+}
+
+
+@media screen and (min-width: 520px) {
+    header {
+        grid-template-columns: 50px auto 25%;
+    }
+    
+    .title-header {
+        text-align: left;
+        padding-left: 0.5em;
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+    .navbar {
+        font-size: 1.3em;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .response-window {
+        width: 60%;
+        max-width: 500px;
+    }
+
+    .footer-block {
+        max-width: 1100px;
+    }
+}
+

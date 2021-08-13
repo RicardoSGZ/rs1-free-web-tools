@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We offer free tools for developers, like VPS or storage with direct download links">
+    <meta name="keywords" content="vps, storage, cloud, developer, coding, online, compiler, testing, learn, linux, shell, terminal">
+    <meta name="author" content="RS1">
+    <meta name="og:title" content="RS1 Free Web Tools">
+    <meta name="og:description" content="We offer free tools for developers, like VPS or storage with direct download links">
+    <meta name="og:image" content="https://rs1.es/res/imgs/promo-fwt.png">
+    <meta name="og:image:width" content="900">
+    <meta name="og:image:height" content="500">
+    <meta name="og:url" content="https://rs1.es">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="RS1 Free Web Tools">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="RS1 Free Web Tools">
+    <meta name="twitter:description" content="We offer free tools for developers, like VPS or storage with direct download links">
+    <meta name="twitter:image" content="https://rs1.es/res/imgs/promo-fwt.png">
+    <meta name="twitter:url" content="https://rs1.es">
+    <title>RS1 Free Web Tools - rs1.es</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/main.min.css?v=20210805_1330">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="logo-header">
+                <img src="res/imgs/logo-header.png" alt="web logo" width="128" height="128">
+            </div>
+            <div class="title-header">
+                <h1><a href="/">Free Web Tools</a></h1>
+            </div>
+            <nav class="navbar">
+                <a href="faq.html">FAQ</a>
+                <a href="termsofservice.html">ToS</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Notices (class "notice") go here -->
+            <!--<div class="notice">
+                <p>UNDER MAINTENANCE. ERRORS MAY OCCUR.</p>
+            </div>-->
+            <!--<div class="notice green">
+                <p>TEST</p>
+            </div>-->
+
+            <div class="intro">
+                <p class="main">free VPS, storage and more</p>
+                <p class="sub">no registration required</p>
+                <div class="social">
+
+                    <div class="social-item">
+                        <a href="https://t.me/rs1freewebtools">
+                            <img src="res/imgs/telegram-logo.png" alt="telegram logo">
+                        </a>
+                    </div>
+                    
+                    <div class="social-item">
+                        <a href="https://discord.gg/JKf5aMSECw">
+                            <img src="res/imgs/discord-logo.png" alt="discord logo">
+                        </a>
+                    </div>
+
+                    <div class="social-item">
+                        <a href="https://www.reddit.com/r/RS1FreeWebTools/">
+                            <img src="res/imgs/reddit-logo.png" alt="reddit logo">
+                        </a>
+                    </div>
+
+                    <div class="social-item">
+                        <a href="https://www.youtube.com/channel/UC5fxA1eDtVWl_3gaitcG8MA">
+                            <img src="res/imgs/youtube-logo.png" alt="youtube logo">
+                        </a>
+                    </div>
+
+                    <div class="social-item">
+                        <a href="mailto:admin@rs1.es">
+                            <img src="res/imgs/email-logo-2.png" alt="email logo">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+            <div class="services-list">
+                <div class="service-item webvps">
+                    <div class="image-box">
+                        <img width="500" height="500" src="res/imgs/servers.png" alt="web-vps-image">
+                    </div>
+                    <div class="description">
+                        <p>Web VPS</p>
+                        <div class="webvps-btns">
+                            <button class="start-btn" id="start-webvps">Launch</button>
+                        </div>
+                        <ul>
+                            <li>Online Linux Terminal</li>
+                        </ul>
+                        <div class="webvps-list">
+                            
+                            <div class="webvps-options">
+                                <div class="webvps-options-btn-box">
+                                    <button id="webvps-options-btn">VPS Options <span id="webvps-options-btn-arrow">&#9660;</span></button>
+                                </div>
+                                <div class="webvps-options-menu-box">
+                                    <div class="webvps-options-menu disabled">
+                                        <div class="webvps-options-script webvps-options-item">
+                                            <div class="webvps-options-item-title">
+                                                <span>Add a startup script</span>
+                                                <span class="options-sub">It will run as "root"</span>
+                                                <span class="options-sub">User's home directory: /home/webvps</span>
+                                            </div>
+                                            <div class="webvps-options-script-textarea">
+                                                <textarea name="script" id="script" cols="30" rows="10" autocomplete="off" placeholder="#!/bin/bash"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="webvps-options-architecture webvps-options-item">
+                                            <div class="webvps-options-item-title">
+                                                <span>Architecture</span>
+                                                <span class="options-sub">Choose between x86_64 and ARM64</span>
+                                            </div>
+                                            <div class="webvps-options-architecture-select">
+                                                <div id="amd64" class="arch-item selected">
+                                                    <span>x86_64</span>
+                                                </div>
+                                                <div id="arm64" class="arch-item">
+                                                    <span>ARM64</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="webvps-options-blankdisk webvps-options-item">
+                                            <div class="webvps-options-item-title">
+                                                <span>Add a blank disk</span>
+                                                <span class="options-sub">Add a 8GB blank disk to the VPS</span>
+                                            </div>
+                                            <div class="webvps-options-blankdisk-checkbox">
+                                                <label for="blankdisk">Add disk</label>
+                                                <input type="checkbox" name="blankdisk" id="blankdisk" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <ul><span>Features:</span>
+                                <li>Full Linux Environment (Ubuntu 20.04)</li>
+                                <li>Access with your browser or SSH</li>
+                                <li>Initial load time: 40-50 sec.</li> <!-- 40-50 amd64 - 20-30 arm-->
+                                <li>Max. uptime/idle time: 3 hours/25 min.</li>
+                                <li>Additional limits apply (See <a style="display: inline; text-decoration: underline;" href="termsofservice.html#tos-limits">ToS</a>)</li>
+                            </ul>
+                            
+                            <span>"Serverless" option</span><span>(Faster but more restricted):</span><a class="cltool" href="https://cltool.rs1.es">Command Line Tool</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="your-ad-1">
+                    <img src="res/imgs/ad-here.png" alt="your ad here">
+                </div>
+
+                <div class="service-item storage" id="dropFileHere">
+                    <div class="image-box">
+                        <img width="500" height="500" src="res/imgs/storage.png" alt="storage-image">
+                    </div>
+                    <div class="description">
+                        <p>Storage for sharing files</p>
+                        <button class="start-btn" id="select-file-btn">Select File</button>
+                        <button class="start-btn" id="delete-file-btn">Delete File</button>
+                        <ul>
+                            <li>Max size per file: 100MB</li>
+                            <li>No speed limit</li>
+                            <li>Direct download links</li>
+                            <li>Files are served through a CDN</li>
+                            <li>You can drag and drop on this area</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="service-item pdf-compressor">
+                    <div class="image-box">
+                        <img width="500" height="500" src="res/imgs/pdf-compressor.png" alt="pdf-compressor-tool-image">
+                    </div>
+                    <div class="description">
+                        <p>PDF Compressor</p>
+                        <a class="start-btn" href="https://pdfcompressor.rs1.es">pdfcompressor.rs1.es</a>
+                        <ul>
+                            <li>Compress a PDF file in three steps</li>
+                            <li>You can also merge two or more PDFs or extract a range of pages</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                
+
+                <div class="service-item image-processing">
+                    <div class="image-box">
+                        <img width="500" height="500" src="res/imgs/img-proc.png" alt="image-processing-tool-image">
+                    </div>
+                    <div class="description">
+                        <p>Image Processing Tool</p>
+                        <a class="start-btn" href="https://imgproc.rs1.es">imgproc.rs1.es</a>
+                        <ul>
+                            <li>Manipulate images in three simple steps</li>
+                            <li>Accepts images up to 30MB</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="service-item video-editor">
+                    <div class="image-box">
+                        <img width="500" height="500" src="res/imgs/video-editor.png" alt="video-editor-image">
+                    </div>
+                    <div class="description">
+                        <p>Video Editor</p>
+                        <a class="start-btn" href="https://videoeditor.rs1.es">videoeditor.rs1.es</a>
+                        <ul>
+                            <li>Simple video editor</li>
+                            <li>Change quality, cut or extract audio</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-item compress" id="dropFileHereCompress">
+                    <div class="image-box">
+                        <img width="500" height="500" src="res/imgs/compress.png" alt="compress-tool-image">
+                    </div>
+                    <div class="description">
+                        <p>File Compressor</p>
+                        <button class="start-btn" id="select-file-compress-btn">Select Files</button>
+                        <ul>
+                            <li>Compress files to ZIP</li>
+                            <li>Max size (input files): 300MB</li>
+                            <li>You can drag and drop on this area</li>
+                            <li>Files are deleted every 24 hours</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            
+           
+            
+        </main>
+        <footer>
+            <div class="footer-block">
+                <div class="footer-intro">
+                    <div class="footer-intro-title">
+                        <img src="res/imgs/logo-header.png" alt="rs1 logo">
+                        <span>Free Web Tools</span>
+                    </div>
+                    <div class="footer-intro-description">
+                        <p>This website offers several free tools for developers and anyone that finds them useful: a VPS for testing, unlimited file storage and more.</p>
+                        <p>Check our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+                <div class="footer-feedback">
+                    <div class="footer-feedback-title">
+                        <span>Support & Feedback</span>
+                    </div>
+                    <div class="footer-feedback-desc">
+                        <p>If you have any troubles or suggestions, you can send an email to <a href="mailto:admin@rs1.es">admin@rs1.es</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <span>2020-2021 - Created by RS1.</span>
+            </div>
+        </footer>
+       
+    </div>
+    
+  
+    <script src="res/js/main.min.js?v=20210812_1710"></script>
+
+</body>
+</html>

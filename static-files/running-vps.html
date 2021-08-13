@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running VPS - RS1 Free Web Tools</title>
+</head>
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+  #VPSNumber {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .full {
+    color: red;
+  }
+  .alarm {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+  }
+</style>
+<body>
+  <div class="content">
+    <span id="VPSNumber"></span>
+    <div id="alarms"></div>
+  </div>
+  <script>
+    let vpsNumberBox = document.getElementById('VPSNumber');
+    let max = 30;
+    let getRunningVPS = () => {
+      fetch('https://[[YOUR-API-URL]]/runningvps')
+        .then((response) => {
+          if (response.ok) {
+            response.json().then((data) => {
+              let instancesNumber = data;
+              let percentage = ((instancesNumber / max) * 100).toFixed(2);
+              let text = `${instancesNumber.toString()} / ${max.toString()} (${percentage.toString()}%)`;
+              vpsNumberBox.innerText = text;
+              if (parseInt(data, 10) >= max) {
+                vpsNumberBox.classList.add('full');
+              } else {
+                vpsNumberBox.classList.remove('full');
+              }
+            })
+          }
+        })
+    }
+
+    let getAlarms = () => {
+      fetch('https://[[YOUR-API-URL]]/showalarms')
+        .then((response) => {
+          if (response.ok) {
+            response.json().then((data) => {
+              let alarmsBox = document.getElementById('alarms');
+              alarmsBox.innerHTML = '';
+              for (let alarm of data) {
+                let span = document.createElement('span');
+                span.classList.add('alarm');
+                span.innerText = alarm;
+                alarmsBox.appendChild(span);
+              }
+            })
+          }
+        })
+    }
+
+    getRunningVPS();
+    getAlarms();
+
+    setInterval(() => {
+      getRunningVPS();
+      getAlarms();
+    }, 20000);
+
+    document.getElementById('VPSNumber').addEventListener('click', () => {
+      if (document.body.requestFullscreen) {
+        document.body.requestFullscreen();
+      }
+    })
+
+  </script>
+</body>
+
+</html>
