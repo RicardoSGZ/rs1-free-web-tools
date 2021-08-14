@@ -33,7 +33,7 @@
 ### How to setup Telegram Bot
 - Create a private chat with @BotFather and create a bot
 - Save the token
-- Ensure you had created the telegram-bot function and had the API URL for that function
+- Ensure you had created the telegram-bot function (paste the token in the right place) and you had the API URL for that function
 - Type this "curl" command (or use any program that can do HTTP requests)
 
 
