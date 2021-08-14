@@ -1,4 +1,5 @@
 # RS1 Free Web Tools project code
+### Note: I currently have no time to improve this repo (more and better info in README, more comments in code, etc.) but anyone can ask me about this project and I will add the answers to the repository.
 ## Tools needed:
 ### AWS (EC2, S3, Lambda, Cloudfront, EventBridge)
 - A VPC and subnet
